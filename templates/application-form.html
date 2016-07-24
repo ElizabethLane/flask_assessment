@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Welcome to our Jobs Page!</h1>
+        <section class="page-description">
+            <p> Welcome to the best company in the world!  Are you looking for 
+            a job? Well, you've come to the right place!  Come work for
+            THE BEST COMPANY IN THE WORLD.
+            </p>
+        </section>
+
+<!-- Job Seeker Input -->
+    <form action="/application" method="POST">
+        <label for="first-name">First Name:</label>
+        <input id="first-name" type="text" name="firstname">
+        <br>
+        <label for="last-name">Last Name:</label>
+        <input id="last-name" type="text" name="lastname">
+        <br>
+        <label for="desired-salray">Salary Requirement (please input as number only): </label>
+        <input id="desired-salary" type="text" name="salary">
+        <br>
+        <label for="job-type"> What Job Are You Applying For? (Choose One):</label>
+        <select id="job-type" name="jobtype">
+            <option value="SoftwareEngineer">Software Engineer</option>
+            <option value="QAEngineer">QA Engineer</option>
+            <option value="ProdcutManager">Product Manager</option>
+        </select>
+        <br>
+        <input type="submit">
+    </form>
+
+{% endblock %}
