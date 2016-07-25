@@ -1,1 +1,24 @@
-/* Your styles can go here. */
+body {
+    padding-bottom: 70px;
+    background-image: url(http://zeff.net/images/Cats/HighResCat.jpg);
+    font-weight: bold;
+    color: purple;
+}
+
+.navbar.navbar-fixed-bottom {
+    color: #BA55D3;
+    font-weight: bold;
+}
+
+.centered-text {
+    text-align: center;
+}
+
+.container-fluid {
+    font-family: 'Tangerine', serif;
+}
+
+.navbar-default {
+    background-color: #98ff98;
+    border-color: #98ff98;
+}

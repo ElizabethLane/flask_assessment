@@ -1,16 +1,45 @@
 <!doctype html>
 <html>
 <head>
-    <title>{% block title %} Coolest Company Ever {% endblock %}</title>
-    <link rel="stylesheet" href="/static/styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/styles.css" rel="stylesheet">
+<!--     Do we need this jquery link for jinja? -->
     <script src="http://code.jquery.com/jquery.js"></script>
+    <title>{% block title %} Coolest Company Ever {% endblock %}</title>
 </head>
 <body>
-    <h1>Best Company. Duh</h1>
-        {% block content %}STUFF FOR MY PAGE HERE{% endblock %}
-        <br>
-        <br>
-        <br>
-        <footer>Copyright 2016 LizzyPop</footer>
+<!--     This is my navbar bootstrap -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-left" href="#">
+                    <img style="max-width:100px; margin-top: -7px;" src="https://s-media-cache-ak0.pinimg.com/236x/33/62/51/336251b9e79f4c93136a831a046ba8ad.jpg">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+<!-- This is for the elements on the page -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="span12 centered-text">
+                <h1>The. Best. Company. Ever.</h1>
+                    {% block content %}STUFF FOR MY PAGE HERE{% endblock %}
+                    <br>
+                    <br>
+                    <br>
+            </div>
+        </div>
+
+<!-- This is for the footer -->
+        <div class="navbar navbar-fixed-bottom">
+            <p class="glyphicon glyphicon-copyright-mark"></p>
+                <footer>2016 LizzyPop</footer>
+        </div>
+    </div>
+    
+<!-- Javascript link -->
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstap.min.js"></script>
 </body>
 </html>

@@ -52,17 +52,4 @@ if __name__ == "__main__":
 
 
 
-#When I ran the server I saw this error in the console:
 
-# (env)vagrant@vagrant-ubuntu-trusty-64:~/src/flask$ python application.py
-# Traceback (most recent call last):
-#   File "application.py", line 2, in <module>
-#     from flask_debugtoolbar import DebugToolbarExtension
-# ImportError: No module named flask_debugtoolbar
-
-#I FIGURED THIS OUT! I had to pip install flask_debugtoolbar
-#ALSO I realized I had to import request from flask
-#Duh
-
-#I commented out anything to do with the DebugToolbarExtension and the server
-#was then able to run
